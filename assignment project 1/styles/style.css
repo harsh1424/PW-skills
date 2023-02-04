@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fac237;
+    
+}
+
+body{
+    background-image:  linear-gradient(rgba(0,0,0,0.438), rgba(0,0, 0, 0.75)) , url(/assets/meal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    padding: 15px 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.logo{
+    /* width: 150px; */
+    padding-left: 30px;
+}
+
+button{
+    background-color: rgb(250, 88, 88);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+main{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main h1{
+    font-size: 75px;
+    font-weight: 600;
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 80px;
+    
+
+}
+main button{
+    margin-top: 30px;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+}
+
+button:hover{
+    cursor: pointer;
+    color:rgb(250, 88, 88);
+    background-color: white;
+   
+    border-radius: 5px;
+
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
