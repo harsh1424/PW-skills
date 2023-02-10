@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.big-desktop,
+.laptop,
+.tablet,
+.mobile {
+    font-size: 30px;
+    text-align: center;
+    margin: 16px;
+    display: none;
+}
+
+@media screen and (max-width:1440px) {
+    body{
+        background-color: green;
+    }
+
+    .big-desktop{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        background-color: rgb(206, 136, 6);
+    }
+
+    .laptop{
+        display: block;
+    }
+
+    .big-desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        background-color: rgb(5, 141, 96);
+    }
+
+    .big-desktop, .laptop{
+        display: none;
+    }
+
+    .tablet{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-color:rgb(224, 18, 87);
+    }
+
+    .big-desktop, .laptop, .tablet{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+}
