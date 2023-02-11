@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #171c27;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    
+    align-items: center;
+    justify-content: right;
+    gap: 16px;
+}
+
+nav{
+    margin: 25px;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.home{
+    padding: 5px 8px;
+    background-color: rgb(20, 20, 180);
+    border-radius: 12px;
+}
+.hamburg-btn img{
+    width: 20px;
+    display: none;
+}
+
+
+
+
+/* main */
+
+.main{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 18px;
+    gap: 40px;
+}
+
+.main-left{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-left img{
+    width: 30px;
+}
+
+
+.main-right img{
+    width: 40vw;
+}
+
+.main-left-line1{
+    display: flex;
+    gap: 10px;
+}
+
+.main-left-line2 h1{
+    font-size: 48px;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.projects div h1{
+    font-size: 30px;
+}
+
+.projects-underline{
+    width: 105px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.project-list img{
+    width: 25vw;
+}
+.project-list{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+    gap: 10px;
+}
+
+.social img{
+    width: 30px;
+}
+
+.footer div h1{
+    font-size: 30px;
+}
+
+.contacts-underline{
+    width: 145px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+img{
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    nav ul{
+        display: none;
+    }
+
+    .hamburg-btn img{
+        display: block;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-left-line1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-left-line2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-left-line2 h1{
+        font-size: 35px;
+    }
+
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project img{
+        width: 55vw;
+    }
+}
