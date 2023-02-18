@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    overflow: hidden;
+}
+
+body{
+    background-color: #f0f4f5;
+    
+}
+/* nav */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 10px 5%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 45px;
+    font-weight: 600;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* main section */
+/* main section */
+
+main{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+}
+
+main h1{
+    text-align: center;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div label{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+form div input{
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 12px;
+    
+
+
+}
+
+form div textarea{
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 12px;
+    height: 120px;
+    resize: none;
+}
+
+button{
+    background-color: #28d892;
+    font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
