@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="color1" placeholder="Enter first color"><br>
+    <input type="text" id="color2" placeholder="Enter second color"><br>
+    <button id="btn">Submit</button><br>
+    <p>check result in console</p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",() => {
+            let color1 = document.getElementById("color1").value;
+            let color2 = document.getElementById("color2").value;
+            let result;
+            switch (color1) {
+                case "red":
+                    switch (color2) {
+                        case "yellow":
+                            result = "orange"
+                            break;
+                        case "blue":
+                            result = "purple"
+                            break
+                        default:
+                            result = "Invalid color combination"
+                            break;
+                    }
+                    break;
+                case "blue":
+                    switch (color2) {
+                        case "yellow":
+                            result = "green"
+                            break;
+                        case "red":
+                            result = "purple"
+                            break
+                        default:
+                            result = "Invalid color combination"
+                            break;
+                    }
+                    break;
+                case "yellow":
+                    switch (color2) {
+                        case "red":
+                            result = "orange"
+                            break;
+                        case "blue":
+                            result = "green"
+                            break
+                        default:
+                            result = "Invalid color combination"
+                            break;
+                    }
+                    break;
+            
+                default:
+                    result = "Invalid color combination"
+                    break;
+            }
+            console.log(result)
+        })
+    </script>
+</body>
+</html>

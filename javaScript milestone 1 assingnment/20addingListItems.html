@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Pw course list click the button below to add course list dynamically</h3>
+    <ul id="list">
+        
+    </ul>
+    <button id="btn">click to add</button>
+
+
+    <script>
+        const Pwcourse = ["DSA Java", "Full Stack Web Development", "Data Science","C++ DSA"]
+        let list = document.getElementById("list")
+        let btn = document.getElementById("btn")
+        let counter = 0
+
+        btn.addEventListener("click", () => {
+            if (counter < Pwcourse.length){
+                let newListItem = document.createElement("li")
+                newListItem.textContent = Pwcourse[counter]
+                list.appendChild(newListItem)
+                counter += 1
+
+            }else{
+                alert("all items have been added")
+            }
+        })
+
+    </script>
+</body>
+</html>

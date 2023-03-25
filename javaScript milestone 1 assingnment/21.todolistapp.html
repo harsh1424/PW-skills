@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do app</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div h1 {
+        margin: 20px;
+        font-size: 50px;
+        align-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      #input {
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      button {
+        padding: 12px;
+        background-color: #0d99f7;
+        border: none;
+        border-radius: 10px;
+      }
+      #to_do_list {
+        list-style: none;
+        font-size: 20px;
+        margin: 10px;
+        margin-left: 0;
+        background-color: #0d99f71f;
+        padding: 20px;
+        border-top: black solid;
+        border-bottom: black solid;
+        border-radius: 20px;
+        box-shadow: 2px 3px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do App</h1>
+      <input type="text" id="input" placeholder="Enter your task" /><br />
+      <button id="submit">submit</button>
+      <ul id="to_do_list"></ul>
+    </div>
+
+    <script>
+      const input = document.getElementById("input");
+      const toDoList = document.getElementById("to_do_list");
+
+      document.getElementById("submit").addEventListener("click", () => {
+        let inputValue = input.value;
+        let listItem = document.createElement("li");
+        listItem.textContent = inputValue;
+        toDoList.appendChild(listItem);
+      });
+    </script>
+  </body>
+</html>

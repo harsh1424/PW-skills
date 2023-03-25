@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text highlighting</title>
+
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore excepturi necessitatibus consectetur ut voluptas eveniet laborum rem animi eum, commodi delectus magni, veritatis sint doloremque doloribus dolor molestiae possimus dicta a similique sapiente, repellat accusantium! Libero quasi architecto ipsam, eius exercitationem veritatis cumque quos quas autem, veniam placeat repudiandae ex est natus eaque provident doloremque magnam, deleniti tenetur sequi aut necessitatibus neque suscipit nihil! Libero, earum ducimus. Enim sequi, deleniti quas ullam explicabo, modi ex neque aspernatur ducimus obcaecati eligendi omnis vitae vero totam provident! Ipsam placeat eligendi laborum dolore iusto aspernatur, minima, labore veniam modi sequi totam ut consequatur voluptas soluta commodi est eveniet! Eligendi deleniti dignissimos quaerat repellat voluptatibus aspernatur maxime, tenetur sit id autem eius dolor in est, ex quidem! Iusto, corrupti exercitationem adipisci nostrum esse alias, eveniet, animi ducimus quas nesciunt veritatis. Dignissimos neque laborum, eos eum ex perferendis quos vero, expedita quod libero sed eius impedit doloribus aliquid corporis blanditiis odit a reprehenderit, nihil cum debitis facilis quas mollitia? Ab eligendi dolorem, ipsum magni repellendus vel perferendis dolore sint. Reprehenderit sequi quae dolor itaque. Ducimus deleniti repellendus porro a, rerum ipsa accusamus dolore vitae reprehenderit temporibus minima doloremque ab. Nam quaerat quo ut quae obcaecati quas ea excepturi repudiandae eius nisi, consequatur cum recusandae libero eveniet reprehenderit officia dolorem cupiditate fugit? Perspiciatis deleniti sunt facere atque dolorem blanditiis nisi. Laborum quidem iusto quam, accusamus corrupti voluptatem eum, impedit beatae error velit, dolores non nam libero harum iure a modi quisquam? Veniam inventore, nostrum ad nesciunt non odit neque deserunt illo excepturi commodi totam sint? Aliquam commodi aliquid tempora repellat nobis nisi corporis sed quidem voluptas corrupti impedit molestiae amet consequatur, porro pariatur laboriosam. Nobis tempora expedita deleniti a magnam pariatur atque animi et quas cum ex consectetur earum iusto voluptatem, fugiat, soluta, obcaecati nihil voluptates.</p>
+
+
+    <script>
+        let paragraph = document.getElementById("paragraph")
+        let words = paragraph.innerText.split(" ")
+
+        for (let i = 0; i < words.length; i++) {
+            if (words[i].length > 8) {
+                words[i] = "<span class='highlight'>" + words[i] + "</span>"
+            }
+
+
+            
+        }
+
+        paragraph.innerHTML = words.join(" ")
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Click to change</button>
+
+    <script>
+      var colors = [
+        "red",
+        "green",
+        "#0000ff",
+        "#ffff00",
+        "#00ffff",
+        "#ff00ff",
+      ]; 
+      let button = document.getElementById("btn");
+
+      function changeColor() {
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+      }
+
+      button.addEventListener("click", changeColor);
+    </script>
+  </body>
+</html>

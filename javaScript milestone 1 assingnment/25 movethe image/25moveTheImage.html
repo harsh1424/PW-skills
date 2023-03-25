@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>move the image</title>
+
+    <style>
+      img {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img.webp" id="img" alt="img" />
+
+    <script>
+      let image = document.getElementById("img");
+
+      let x = 0;
+      let y = 0;
+      image.style.left = x + "px";
+      image.style.top = y + "px";
+
+      document.addEventListener("keydown", function (event) {
+        let keyCode = event.keyCode;
+
+        switch (keyCode) {
+          case 37: // left arrow
+            x -= 10;
+            break;
+          case 38: // up arrow
+            y -= 10;
+            break;
+          case 39: // right arrow
+            x += 10;
+            break;
+          case 40: // down arrow
+            y += 10;
+            break;
+        }
+
+        image.style.left = x + "px";
+        image.style.top = y + "px";
+      });
+    </script>
+  </body>
+</html>

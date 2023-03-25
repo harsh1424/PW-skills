@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let text = prompt("enter any text")
+
+        function countVowels(text) {
+            let vowelCount = 0
+            for (let i = 0; i < text.length; i++) {
+                let char = text[i]
+                if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u' ||
+      char == 'A' || char == 'E' || char == 'I' || char == 'O' || char == 'U'){
+        vowelCount++
+      }
+                
+            }
+            return vowelCount
+        }
+
+        console.log(countVowels(text))
+    </script>
+</body>
+</html>

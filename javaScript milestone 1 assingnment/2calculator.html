@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="firstNum" placeholder="Enter first number"><br>
+    <input type="text" id="sign" placeholder="Enter the arithmatic sign"><br>
+    <input type="number" id="secondNum" placeholder="Enter the second number"><br>
+    <button id="submit">Submit</button>
+
+    <script>
+        
+        let btn = document.getElementById("submit")
+
+        const calculator = () => {
+            let firstNum = Number(document.getElementById("firstNum").value) 
+            let secondNum = Number(document.getElementById("secondNum").value)
+            let sign = String( document.getElementById("sign").value)
+            
+            let result = 0
+            switch (sign) {
+                case "+":
+                    result = firstNum + secondNum
+                    break;
+                case "-":
+                    result = firstNum - secondNum
+                    break;
+                case "*":
+                    result = firstNum * secondNum
+                    break;
+                case "/":
+                    result = firstNum / secondNum
+                    break        
+                default:
+                    result = "invalid Operator"
+                    break;
+            }
+            console.log(result)
+        }
+
+        btn.addEventListener("click", calculator)
+
+    </script>
+</body>
+</html>
