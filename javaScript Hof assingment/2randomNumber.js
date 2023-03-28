@@ -7,8 +7,8 @@ let timer = setInterval(() => {
 }, 1000)
 
 setTimeout(() =>{
-    // clearInterval(timer)
+    clearInterval(timer)
     randomNumber = Math.floor(Math.random() * 100 ) + 1;
     console.log("random Number generated : ", randomNumber)
-    clearInterval(timer)
+    
 }, delay)
