@@ -6,7 +6,7 @@ const countTheOccurrences = (str) => {
     for (let index = 0; index < words.length; index++) {
         let count = 0
         if (wordCountMap.has(words[index])){
-            console.log("inside if")
+            //console.log("inside if")
             count = wordCountMap.get(words[index])
         }
         wordCountMap.set(words[index], count + 1)
