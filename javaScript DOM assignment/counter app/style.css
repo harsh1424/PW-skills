@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+}
+button{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+span{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
